@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ggv=0-^6tg@%r&58ys95q=-uccl1l4g_4j0p37u0xljy_zzj)e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['codefree-iris-app.azurewebsites.net']
 
@@ -129,7 +129,7 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend'
 ]
-# SITE_ID = 1
+SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 
 # Additional configuration settings
