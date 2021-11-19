@@ -25,7 +25,7 @@ SECRET_KEY = 'ggv=0-^6tg@%r&58ys95q=-uccl1l4g_4j0p37u0xljy_zzj)e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['codefree-iris-app.azurewebsites.net']
 
 
 # Application definition
