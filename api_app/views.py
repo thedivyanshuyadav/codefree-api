@@ -30,3 +30,8 @@ def index(request):
 
     response = "Service is up"
     return render(request,'index.html',context={'response':"Service is up",'form':IrisForm},content_type='text/html')
+@csrf_exempt
+@login_required
+def viewDb(request):
+    data = IrisModel.objects.all()
+    return render(request,"db.html",{"data":data})
